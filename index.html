@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="GeoSpot - GPS Coordinates Finder" />
+    <meta
+      name="description"
+      content="Find your exact GPS coordinates instantly with GeoSpot. Get accurate latitude and longitude using your device."
+    />
+    <meta
+      name="keywords"
+      content="GPS, coordinates, latitude, longitude, location finder, GeoSpot, geolocation"
+    />
+    <meta name="author" content="Krish Bharadwaj" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="GeoSpot" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>GeoSpot - GPS Coordinates Finder</title>
+  </head>
+  <body>
+    <!-- Main Head -->
+    <h1 class="gps-coordinates">
+      GPS <span class="coordinates">Coordinates</span>
+    </h1>
+
+    <div class="parent-box">
+      <h2 class="gps_coord">GPS Coordinates Finder</h2>
+
+      <form action="" method="POST">
+        <p class="latitude">Latitude</p>
+
+        <input
+          type="number"
+          placeholder="Latitude"
+          name="latitude"
+          class="lati"
+          disabled
+        />
+
+        <p class="latitude longitude">Longitude</p>
+
+        <input
+          type="number"
+          placeholder="Longitude"
+          name="Longitude"
+          class="lati longi"
+          disabled
+        />
+
+        <br />
+
+        <input
+          type="submit"
+          value="Find Coordinates"
+          class="coordinates_find"
+        />
+      </form>
+    </div>
+
+    <!-- Latitude -->
+    <div class="latitude_info">
+      <h2 class="inner_latitude">Latitude</h2>
+
+      <p class="inner_latitude_info">
+        The latitude of a point is the measurement of the angle formed by the
+        equatorial plane with the line connecting this point to the center of
+        the Earth. <br />
+        By construction, it is comprised between -90 ° and 90 °. Negative values
+        ​​are for the southern hemisphere locations, and latitude is worth 0 °
+        at the equator.
+      </p>
+    </div>
+
+    <!-- Longitude -->
+    <div class="latitude_info longitude_info">
+      <h2 class="inner_latitude inner_longitude">Longitude</h2>
+
+      <p class="inner_latitude_info inner_longitude_info">
+        The principle is the same for the longitude, with the difference that
+        there is no natural reference like the equator for the latitude.
+        Longitude reference has been arbitrarily set at the Greenwich Meridian
+        (it passes through the Royal Greenwich Observatory in Greenwich in the
+        suburbs of London), and the longitude of a point is the measurement of
+        the angle formed by the half plane formed by the axis of the earth and
+        passes through the Greenwich meridian and the half-plane formed by the
+        axis of the earth and passing through the point.
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Copyright Message  -->
+    <p class="copyright">
+      Copyright © 2026 GPS Coordinates — All rights reserved
+    </p>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
